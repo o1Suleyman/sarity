@@ -14,12 +14,12 @@ const Logo = () => {
       <Image src="/light.png" className={styles.imgDark} width={150} height={66} alt="Logo" />
     </>
     )
-  else return (
+  return (
     <>
-        {resolvedTheme === 'dark' ? (
-            <Image src="/light.png" width={150} height={66} alt="Logo" />
-        ) : (
+        {resolvedTheme === 'light' ? (
             <Image src="/dark.png" width={150} height={66} alt="Logo" />
+        ) : (
+            <Image src="/light.png" width={150} height={66} alt="Logo" />
         )}
     </>
   )
